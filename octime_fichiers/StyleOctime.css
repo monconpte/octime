@@ -1,0 +1,79 @@
+
+@import url(StyleFavoris.css);
+
+/* Style des placeholder */
+input::-webkit-input-placeholder {
+	font-style: normal;
+	color: #8C9094;
+}
+input::placeholder {
+	font-style: normal;
+	color: #8C9094;
+}
+input.redplaceholder::-webkit-input-placeholder {
+	font-style: normal;
+	color: #FF0000;
+}
+input.redplaceholder::placeholder {
+	font-style: normal;
+	color: #FF0000;
+}
+textarea::-webkit-input-placeholder {
+	font-style: normal;
+	color: #8C9094;
+}
+textarea::placeholder {
+	font-style: normal;
+	color: #8C9094;
+}
+textarea.redplaceholder::-webkit-input-placeholder {
+	font-style: normal;
+	color: #FF0000;
+}
+textarea.redplaceholder::placeholder {
+	font-style: normal;
+	color: #FF0000;
+}
+
+/* Style des calendriers */
+.style_calendrier_octime>table>tbody>tr>td>table {
+	width:175px !important;
+	margin-left:19px;
+	margin-right:19px;
+}
+.style_calendrier_octime>table>tbody>tr>td>table>tbody>tr:first-child {
+	height:39px !important;
+}
+.style_calendrier_octime>table>tbody>tr>td>table>tbody>tr:nth-child(n+2) {
+	height:25px !important;
+}
+.style_calendrier_octime>table>tbody>tr>td>table>tbody>tr:last-child {
+	height:39px !important;
+}
+.style_calendrier_octime>table>tbody>tr>td>table>tbody>tr:last-child>td {
+	padding-bottom: 2px !important;
+}
+
+/* Style des inputs grisés */
+input.S003-CHAMP-TEXT:disabled, input.S011-CHAMP-TEXT-MONOSPACE:disabled {
+	background-color: #F4F8FC;
+	color: #A0A4A8;
+}
+
+/* Style des listes grisées */
+select.S005-CHAMP-LIST:disabled {
+	background-color: #F4F8FC;
+}
+select.S005-CHAMP-LIST:disabled>option {
+	color: #A0A4A8;
+}
+
+/* Pour éviter les débordements d'onglets dans les popups */
+td.WDOT {
+	width:100% !important;
+}
+
+/* Pour éviter le centrage du contenu dans les champs HTML (header et compteurs notamment) - en attendant de trouver mieux ou d'une amélioration de WebDev */
+#CH_ICONE_HEADER.valignmiddle, #CH_DATEETCDF.valignmiddle, #CH_HTML_CPT.valignmiddle, #CH_HTML_DESSIN_AVANT.valignmiddle, #CH_HTML_DESSIN.valignmiddle, #CH_HTML_DESSIN_APRES.valignmiddle {
+	vertical-align:top !important;
+}
